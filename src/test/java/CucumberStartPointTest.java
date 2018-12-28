@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = "bell.StepDefinition",
+        glue = "StepDefinition",
         tags = "@calc",
         snippets = SnippetType.CAMELCASE
 )

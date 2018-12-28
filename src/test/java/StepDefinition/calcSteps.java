@@ -1,7 +1,6 @@
-package bell.StepDefinition;
+package StepDefinition;
 
 import bell.calc.Calculator;
-import cucumber.api.PendingException;
 import cucumber.api.java.ru.*;
 import org.junit.Assert;
 
@@ -24,7 +23,7 @@ public class calcSteps {
     }
 
     @Тогда("^результат равен: (-?\\d+,?\\d*)$")
-    public void результатРавен(double asserted) {
+    public void assertSum(double asserted) {
         Assert.assertEquals(asserted, this.sum, 0.0001);
     }
 
